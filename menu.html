@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tasty Eats - Menu</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Tasty Eats</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html" class="active">Menu</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+        <div class="mobile-menu">
+            <i class="fas fa-bars"></i>
+        </div>
+    </header>
+
+    <section class="menu-header">
+        <h1>Our Menu</h1>
+        <p>Choose from our wide variety of delicious options</p>
+        <div class="menu-categories">
+            <button class="category-btn active" data-category="all">All</button>
+            <button class="category-btn" data-category="pizza">Pizza</button>
+            <button class="category-btn" data-category="burger">Burgers</button>
+            <button class="category-btn" data-category="pasta">Pasta</button>
+            <button class="category-btn" data-category="dessert">Desserts</button>
+        </div>
+    </section>
+
+    <section class="menu-items">
+        <div class="menu-item" data-category="pizza">
+            <img src="images/pizza.jpg" alt="Margherita Pizza">
+            <div class="item-info">
+                <div class="item-header">
+                    <h3>Margherita Pizza</h3>
+                    <span class="price">$10.99</span>
+                </div>
+                <p>Fresh tomato sauce, mozzarella, and basil</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="menu-item" data-category="pizza">
+            <img src="images/pizza.jpg" alt="Pepperoni Pizza">
+            <div class="item-info">
+                <div class="item-header">
+                    <h3>Pepperoni Pizza</h3>
+                    <span class="price">$12.99</span>
+                </div>
+                <p>Tomato sauce, mozzarella, and pepperoni</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="menu-item" data-category="pizza">
+            <img src="images/pizza.jpg" alt="Vegetarian Pizza">
+            <div class="item-info">
+                <div class="item-header">
+                    <h3>Vegetarian Pizza</h3>
+                    <span class="price">$11.99</span>
+                </div>
+                <p>Tomato sauce, mozzarella, bell peppers, mushrooms, onions, and olives</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="menu-item" data-category="burger">
+            <img src="images/burger.jpg" alt="Classic Burger">
+            <div class="item-info">
+                <div class="item-header">
+                    <h3>Classic Burger</h3>
+                    <span class="price">$7.99</span>
+                </div>
+                <p>Beef patty, lettuce, tomato, onions, and special sauce</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="menu-item" data-category="burger">
+            <img src="images/burger.jpg" alt="Cheeseburger">
+            <div class="item-info">
+                <div class="item-header">
+                    <h3>Cheeseburger</h3>
+                    <span class="price">$8.99</span>
+                </div>
+                <p>Beef patty, cheese, lettuce, tomato, onions, and special sauce</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="menu-item" data-category="pasta">
+            <img src="images/pasta.jpg" alt="Spaghetti Bolognese">
+            <div class="item-info">
+                <div class="item-header">
+                    <h3>Spaghetti Bolognese</h3>
+                    <span class="price">$9.99</span>
+                </div>
+                <p>Spaghetti with rich meat sauce and parmesan</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="menu-item" data-category="pasta">
+            <img src="images/pasta.jpg" alt="Fettuccine Alfredo">
+            <div class="item-info">
+                <div class="item-header">
+                    <h3>Fettuccine Alfredo</h3>
+                    <span class="price">$10.99</span>
+                </div>
+                <p>Fettuccine pasta in creamy parmesan sauce</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <div class="cart-container">
+        <div class="cart">
+            <h2>Your Cart</h2>
+            <div class="cart-items">
+                <!-- Cart items will be added here dynamically -->
+                <p class="empty-cart">Your cart is empty</p>
+            </div>
+            <div class="cart-total">
+                <p>Total: <span id="total-price">$0.00</span></p>
+                <button class="checkout-btn">Checkout</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Tasty Eats</h3>
+                <p>Bringing delicious meals to your doorstep since 2023.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Info</h3>
+                <p><i class="fas fa-map-marker-alt"></i> 123 Food Street, City</p>
+                <p><i class="fas fa-phone"></i> (123) 456-7890</p>
+                <p><i class="fas fa-envelope"></i> info@tastyeats.com</p>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 Tasty Eats. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html> 
